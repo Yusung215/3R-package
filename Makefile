@@ -56,7 +56,7 @@ test-pylint:	## Check pylint is OK or fails
 .PHONY: test-pytest
 test-pytest:	## Run tests with pytest
 	# Run coverage only on the unit tests
-	pytest --cov=3R-package tests/unit
+	pytest --cov=package_3r tests/unit
 
 	# Then run tests without coverage
 	pytest
