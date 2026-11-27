@@ -23,11 +23,11 @@ def package_3r_cli(message, mean):
     if mean is not None:
         try:
             values = [float(x.strip()) for x in mean.split(",")]
-        except ValueError:
+        except ValueError as exc:
             raise click.BadParameter(
                 "Please enter comma-separated numbers.",
                 param_hint="--mean",
-            )
+            ) from exc
 
         result = calculate_mean(values)
         click.echo(f"Mean: {result}")
