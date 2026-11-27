@@ -10,3 +10,10 @@ def hello_world(message):
     logger.warning("This is WARN level log message")
     logger.error("This is ERROR level log message")
     return f"Hello world!: {message}"
+
+def calculate_mean(values):
+    """Calculate the arithmetic mean of numerical values."""
+    if not values:
+        raise ValueError("The input must not be empty.")
+
+    return sum(values) / len(values)
