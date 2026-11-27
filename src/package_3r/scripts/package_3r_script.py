@@ -1,9 +1,8 @@
-
 """CLI script for the package_3r package. This will be called on the command line"""
 
 import click
 
-from package_3r.package_3r import hello_world, calculate_mean
+from package_3r.package_3r import calculate_mean, hello_world
 
 
 @click.command()

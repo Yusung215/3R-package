@@ -11,6 +11,7 @@ def hello_world(message):
     logger.error("This is ERROR level log message")
     return f"Hello world!: {message}"
 
+
 def calculate_mean(values):
     """Calculate the arithmetic mean of numerical values."""
     if not values:
